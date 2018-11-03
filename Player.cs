@@ -33,6 +33,16 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
             transform.Rotate(Vector3.down * Time.deltaTime * turningSpeed);
         //this part of code makes it turn up
+        
+          /*if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * strafeSpeed);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(Vector3.up * Time.deltaTime * turningSpeed);
+        }
+        */
  
     }
 }
