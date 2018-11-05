@@ -41,4 +41,12 @@ public class Player : MonoBehaviour
 
     }
 
+    public void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.tag == "Missle")
+        {
+            Destroy(col.gameObject);
+        }
+    }
+
 }
